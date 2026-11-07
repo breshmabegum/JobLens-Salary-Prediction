@@ -1,1 +1,9 @@
-# JobLens-Salary-Prediction
+JobLens ML: Salary Prediction Model 🚀Welcome to the JobLens ML salary prediction project! This project bridges traditional Data Analytics (Python, SQL, Power BI) with Exploratory Data Analysis (EDA) and Machine Learning predictive modeling.📌 Project OverviewAs part of expanding the JobLens data analytics initiative, this repository contains a machine learning pipeline that predicts professional salaries based on key career indicators:Experience YearsTechnical Skills Count (Python, SQL, Power BI, ML, etc.)Projects Completed📂 Repository StructureJobLens-Salary-Prediction/
+│
+├── salary_prediction_skills_data.csv    # Dataset with 500 records
+├── app.py                               # Python script for training & testing ML models
+└── README.md                            # Project documentation
+📊 Dataset Features (salary_prediction_skills_data.csv)Experience_Years: Total professional work experience.Technical_Skills_Count: Number of core tools/languages mastered.Projects_Completed: Total end-to-end data/ML projects built.Salary: Target variable (compensation package).💻 Tech Stack & LibrariesPythonPandas & NumPy (Data manipulation and preprocessing)Matplotlib & Seaborn (Data visualization & correlation heatmaps)Scikit-Learn (Machine Learning algorithms & evaluation metrics)⚙️ How to Run the Project LocallyClone this repository:git clone https://github.com/breshmabegum/JobLens-Salary-Prediction.git
+Navigate into the project directory and install required libraries:pip install pandas numpy matplotlib seaborn scikit-learn
+Run the Python script:python app.py
+📈 Model Performance & EvaluationThe dataset is split into training and testing sets ($80/20$). We evaluate models using:Root Mean Squared Error (RMSE)$R^2$ Score (Coefficient of Determination)Algorithms compared: Linear Regression and Random Forest Regressor.
