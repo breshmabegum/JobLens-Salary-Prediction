@@ -42,14 +42,3 @@ Salary forecasting is critical for job seekers and recruiters alike. This model 
    git clone [https://github.com/breshmabegum/JobLens-Salary-Prediction.git](https://github.com/breshmabegum/JobLens-Salary-Prediction.git)
    cd JobLens-Salary-Prediction
 
-   📈 Model Performance & Evaluation
-Linear Regression: Achieved high accuracy and stability in mapping linear dependencies between experience/skills and compensation.
-
-Random Forest Regressor: Handled non-linear patterns effectively to predict accurate salary ranges.
-
-💡 Custom Prediction Example
-The model can take real-time inputs to predict specific salaries:
-
-Input: 3 Years Experience, 5 Technical Skills, 2 Projects Completed
-
-Predicted Salary: ~$92,548.54
