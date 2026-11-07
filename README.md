@@ -1,9 +1,55 @@
-JobLens ML: Salary Prediction Model 🚀Welcome to the JobLens ML salary prediction project! This project bridges traditional Data Analytics (Python, SQL, Power BI) with Exploratory Data Analysis (EDA) and Machine Learning predictive modeling.📌 Project OverviewAs part of expanding the JobLens data analytics initiative, this repository contains a machine learning pipeline that predicts professional salaries based on key career indicators:Experience YearsTechnical Skills Count (Python, SQL, Power BI, ML, etc.)Projects Completed📂 Repository StructureJobLens-Salary-Prediction/
-│
-├── salary_prediction_skills_data.csv    # Dataset with 500 records
-├── app.py                               # Python script for training & testing ML models
-└── README.md                            # Project documentation
-📊 Dataset Features (salary_prediction_skills_data.csv)Experience_Years: Total professional work experience.Technical_Skills_Count: Number of core tools/languages mastered.Projects_Completed: Total end-to-end data/ML projects built.Salary: Target variable (compensation package).💻 Tech Stack & LibrariesPythonPandas & NumPy (Data manipulation and preprocessing)Matplotlib & Seaborn (Data visualization & correlation heatmaps)Scikit-Learn (Machine Learning algorithms & evaluation metrics)⚙️ How to Run the Project LocallyClone this repository:git clone https://github.com/breshmabegum/JobLens-Salary-Prediction.git
-Navigate into the project directory and install required libraries:pip install pandas numpy matplotlib seaborn scikit-learn
-Run the Python script:python app.py
-📈 Model Performance & EvaluationThe dataset is split into training and testing sets ($80/20$). We evaluate models using:Root Mean Squared Error (RMSE)$R^2$ Score (Coefficient of Determination)Algorithms compared: Linear Regression and Random Forest Regressor.
+# 🚀 JobLens ML: Skills & Experience Salary Prediction
+
+An end-to-end Machine Learning project that bridges exploratory data analysis with predictive modeling to forecast job salaries based on professional experience, technical skills, and completed projects. 
+
+This project is an extension of the **JobLens** data analytics initiative, shifting from descriptive analytics to predictive machine learning.
+
+---
+
+## 📊 Project Overview
+Salary forecasting is critical for job seekers and recruiters alike. This model analyzes key professional drivers to accurately predict compensation packages using Python and Scikit-Learn.
+
+### **Features Used in the Model:**
+1. **`Experience_Years`**: Total years of professional work experience.
+2. **`Technical_Skills_Count`**: Number of technical competencies mastered (e.g., Python, SQL, Power BI, Machine Learning).
+3. **`Projects_Completed`**: Number of end-to-end data and machine learning projects built.
+
+---
+
+## 📈 Dataset Statistics (500 Records)
+* **Total Records (Rows):** 500
+* **Average Salary (Mean):** $127,306.00
+* **Median Salary:** $128,250.00
+* **Minimum Salary:** $57,300.00
+* **Maximum Salary:** $203,900.00
+* **Target Variable:** `Salary` ($)
+
+---
+
+## 🛠️ Tech Stack & Libraries
+* **Language:** Python 🐍
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Machine Learning:** Scikit-Learn (`LinearRegression`, `RandomForestRegressor`, `train_test_split`, `mean_squared_error`, `r2_score`)
+* **Environment:** VS Code / Google Colab
+
+---
+
+## ⚙️ How to Run Locally
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/breshmabegum/JobLens-Salary-Prediction.git](https://github.com/breshmabegum/JobLens-Salary-Prediction.git)
+   cd JobLens-Salary-Prediction
+
+   📈 Model Performance & Evaluation
+Linear Regression: Achieved high accuracy and stability in mapping linear dependencies between experience/skills and compensation.
+
+Random Forest Regressor: Handled non-linear patterns effectively to predict accurate salary ranges.
+
+💡 Custom Prediction Example
+The model can take real-time inputs to predict specific salaries:
+
+Input: 3 Years Experience, 5 Technical Skills, 2 Projects Completed
+
+Predicted Salary: ~$92,548.54
